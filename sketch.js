@@ -58,7 +58,8 @@ function draw() {
 
 function keyPressed() {
   if (keyCode === DOWN_ARROW) {
-     cannonBall = new CannonBall(cannon.x, cannon.y);
+    //Crie um objeto da classe CannonBall e seus atributos serão 'cannon.x' e 'cannon.y'
+    //???
     cannonBall.trajectory = [];
     Matter.Body.setAngle(cannonBall.body, cannon.angle);
     balls.push(cannonBall);
@@ -80,13 +81,14 @@ function showBoats() {
       var positions = [-40, -60, -70, -20];
       var position = random(positions);
       var boat = new Boat(width, height - 100, 170, 170, position);
-
-      boats.push(boat);
+//Coloque o código 'push', pois ele adiciona o barco dentro da lista boats
+      boats.???(boat);
     }
 
     for (var i = 0; i < boats.length; i++) {
       if (boats[i]) {
-        Matter.Body.setVelocity(boats[i].body, {
+        //Utilize o código que define a velocidade
+        ???(boats[i].body, {
           x: -0.9,
           y: 0
         });
@@ -95,7 +97,8 @@ function showBoats() {
       } 
     }
   } else {
-     boat = new Boat(width, height - 60, 170, 170, -60);
+    //Crie um objeto para o boat com os seguintes atributos: 'width, height - 60, 170, 170, -60'
+    //???
     boats.push(boat);
   }
 }
