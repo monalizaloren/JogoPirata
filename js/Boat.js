@@ -4,10 +4,14 @@ class Boat {
     this.body = Bodies.rectangle(x, y, width, height);
     this.width = width;
     this.height = height;
-
-    this.image = loadImage("./assets/boat.png");
     this.boatPosition = boatPos;
+    this.image = loadImage("./assets/boat.png");
+
     World.add(world, this.body);
+  }
+
+  remove(index) {
+   //???
   }
 
   display() {
